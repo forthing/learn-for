@@ -5,7 +5,7 @@
 - 打包应⽤用及依赖包到⼀一个可移植的容器，发布到任何流⾏的Linux机器上，便可以实现虚拟化。
 - Docker 镜像中包含了运行环境和配置，所以 Docker 可以简化部署多种应用实例工作。
 - Docker 客户端通过命令行或者其他工具使用 [Docker API ](https://docs.docker.com/reference/api/docker_remote_api) 与 Docker 的守护进程通信。
-- 通过docker的两个参数 `-i` `-t`，让docker运⾏的容器器现”对话”的能⼒。`-i`表 示允许你对容器的STDIN进⾏交互，`-t`在新容器器内指定⼀个伪终端或终端。 可以通过运⾏`exit`命令或者使⽤用`CTRL+D`来退出容器器。
+- 通过docker的两个参数 `-i` `-t`，让docker运⾏的容器展现”对话”的能⼒。`-i`表示允许你对容器的STDIN进⾏交互，`-t`在新容器器内指定⼀个伪终端或终端。 可以通过运⾏`exit`命令或者使⽤用`CTRL+D`来退出容器器。
 - docker可以通过命令来进行相应操作，**docker run -d -p webapp python app.py**, `-d`让容器器在后台运⾏，-P将容器器内部使⽤的⽹络端口映射到我们使用的主机上。 使用 docker ps 来查看我们正在运⾏的容器。
 - 创建镜像可以通过已有镜像改进或者用dockerfile制作镜像,镜像制作首先从FROM开始，除了选择现有镜像为基础镜像外，Docker 还存在一个特殊的镜像，名为 `scratch`。这个镜像是虚拟的概念，并不实际存在，它表示⼀个空白的镜像。
 #### 2、docker镜像和容器理解
